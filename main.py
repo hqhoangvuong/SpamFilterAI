@@ -7,7 +7,7 @@ commit_count = 0
 while(True):
     added_lines = ''
     num_of_added_line = rng.randint(1, 20)
-    sleep_time = rng.randint(1000, 9000) / 1000
+    sleep_time = rng.randint(5000, 20000) / 1000
     for idx in range(num_of_added_line):
         added_lines += str(my_uuid) + '\n'
     with open("guid_lib.txt", "a") as f:
