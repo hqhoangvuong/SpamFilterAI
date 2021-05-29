@@ -6,7 +6,7 @@ my_uuid = uuid.uuid4()
 commit_count = 0
 while(True):
     added_lines = ''
-    num_of_added_line = rng.random(1, 20)
+    num_of_added_line = rng.randint(1, 20)
     sleep_time = rng.randint(1000, 9000) / 1000
     for idx in range(num_of_added_line):
         added_lines += str(my_uuid) + '\n'
